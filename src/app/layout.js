@@ -2,14 +2,10 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/component/Navbar/Navbar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const geist = Geist({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'], // optional
+  display: 'swap',
 });
 
 export const metadata = {
@@ -21,14 +17,14 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en" data-theme="light"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className={`h-full ${geist.className}`}>
         <main>
           <Navbar />
           {children}
         </main>
-        </body>
+      </body>
     </html>
   );
 }
