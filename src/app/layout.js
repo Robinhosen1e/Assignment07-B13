@@ -1,6 +1,6 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/component/Navbar/Navbar";
+import AllHomePageSection from "@/component/HomePage/allsection/homeallsection";
 
 const geist = Geist({
   subsets: ['latin'],
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
     >
       <body className={`h-full ${geist.className}`}>
         <main>
-          <Navbar />
+          <AllHomePageSection />
           {children}
         </main>
       </body>
