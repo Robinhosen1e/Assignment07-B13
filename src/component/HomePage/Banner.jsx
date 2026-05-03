@@ -9,7 +9,7 @@ const Banner = () => {
                 <p className='text-[#64748B] mb-8'>Your personal shelf of meaningful connections. Browse, tend, and nurture the <br className='hidden md:block'  /> relationships that matter most.</p>
                 <button className='btn bg-[#244D3F]  text-white font-semibold mb-10'><Plus className="-mr-0.5" size={18} />Add a Friend</button>
             </div>
-            <div className='grid grid-cols-2 xl:grid-cols-4 gap-8 mt-16'>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mt-16'>
 
                 <div className='p-8 bg-white shadow-md border-2 text-center border-gray-50 rounded-2xl'>
                     <h1 className='text-3xl font-semibold text-[#244D3F]'>10</h1>

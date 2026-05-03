@@ -1,6 +1,10 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist} from "next/font/google";
 import "./globals.css";
-import AllHomePageSection from "@/component/HomePage/allsection/homeallsection";
+import Navbar from "@/component/Navbar/Navbar";
+import Footer from "@/component/Footer/Footer";
+import { ToastContainer } from "react-toastify";
+import TimelineProvider from "@/context/TimelineContext";
+
 
 const geist = Geist({
   subsets: ['latin'],
@@ -20,10 +24,14 @@ export default function RootLayout({ children }) {
       className={`h-full antialiased`}
     >
       <body className={`h-full ${geist.className}`}>
-        <main>
-          <AllHomePageSection />
+       
+         <TimelineProvider>
+           <Navbar />
           {children}
-        </main>
+           <ToastContainer />
+          <Footer />
+        </TimelineProvider>
+       
       </body>
     </html>
   );

@@ -44,7 +44,7 @@ const Navbar = () => {
         {link}
       </ul>
     </div>
-    <h1 className=" cursor-pointer text-2xl font-extrabold">Keen<span className="font-medium text-[#244D3F]">Keeper</span></h1>
+    <Link href="/" className=" cursor-pointer text-2xl font-extrabold">Keen<span className="font-medium text-[#244D3F]">Keeper</span></Link>
   </div>
   <div className="navbar-end">
    <div className="navbar-center hidden lg:flex">
