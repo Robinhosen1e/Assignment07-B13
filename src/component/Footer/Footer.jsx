@@ -1,9 +1,4 @@
 
-import Image from "next/image";
-import FacebookIcon from "../../assets/facebook.png";
-import TwitterIcon from "../../assets/twitter.png";
-import Instagram from "../../assets/instagram.png";
-
 const Footer = () => {
     return (
         <div className="bg-[#244D3F] text-white mt-10">
