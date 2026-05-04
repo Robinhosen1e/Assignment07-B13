@@ -25,7 +25,7 @@ const Friend = ({ friend }) => {
                     <h3 className='text-xl text-[#1F2937] font-semibold mb-1.5'>{friend?.name}</h3>
                     <p className='text-[#64748B] text-xs mb-2.5'>{friend?.days_since_contact} ago</p>
                     <div className='items-center mb-2.5'>
-                        {friend.tags.map((tag, index) => (
+                        {friend?.tags.map((tag, index) => (
                         <span key={`${tag}-${index}`} className='inline-block  bg-[#CBFADB] rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2'>
                             {tag}
                         </span>

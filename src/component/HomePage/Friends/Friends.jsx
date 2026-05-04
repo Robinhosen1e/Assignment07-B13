@@ -1,5 +1,10 @@
+"use client";
+
+import Friend from "@/app/friends/page";
+
+// import Friend from '@/app/friends/page';
 import friends from '@/data/friends.json';
-import Friend from '@/app/friends/page';
+
 
 
 
